@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang = 'pl'>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Tata Jasia</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bold+700&display=swap" rel="stylesheet">
+    <link href='{{url_for('static', filename="css/styles.css")}}' rel="stylesheet">
+</head>
+<body>
+    <div class="czolowka">
+        <h1> Telekomunikacja Bezprzewodowa </h1>
+        <nav>
+            <button>O nas</button>
+            <button>Projekty</button>
+            <button>Kontakt</button>
+            <span class='pasek'><span>Tel. 123-456-789</span><span>E-mail: tatajasia@op.pl</span></span>
+        </nav>
+    </div>
+    <div>
+        {% block content %}{% endblock content %}
+    </div>
+</body>
+</html>
