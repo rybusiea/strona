@@ -3,47 +3,77 @@
     
     <div class="slideshow-container">
 
-    <div class="myslides fade">
-      <div class="numbertext">1 / 2</div>
-      <img class="slides" src="{{url_for("static", filename="mountain1.jpg")}}" alt="zjebałam vol.1">
-      <div class="text">Góóóryyy</div>
-    </div>
+      <div class="myslides fade">
+        <img class="slides" src="{{url_for("static", filename="mountain1.jpg")}}" alt="zjebałam vol.1">
+        <div class="text">Góóóryyy</div>
+      </div>
 
-    <div class="myslides fade">
-      <div class="numbertext">2 / 2</div>
-      <img class="slides" src="{{url_for("static", filename="snowtops1.jpg")}}" alt="znowu zjebałam (vol.2)">
-      <div class="text">Wincyj góóór</div>
+      <div class="myslides fade">
+        <img class="slides" src="{{url_for("static", filename="snowtops1.jpg")}}" alt="znowu zjebałam (vol.2)">
+        <div class="text">Wincyj góóór</div>
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <br>
+      <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+      </div>
+      <br>
     </div>
     
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
+    <div class="podzial">Co wyróżnia naszą firmę?
     </div>
-    <br>
-    
+    <div class="blokpusty"> 
+      <ul><li> umiem polizać łokieć </li>
+      <li> jesteśmy honorowymi członkami klubu myszki miki </li>
+      <li> proszę pomocy zatrzasnąłem się w chłodni </li>
+      <li> jebać pis </li>
+      <li> serio wypuśćcie mnie, nie czuję palców u nóg </li>
+      </ul>
+    </div>
 
-
-    <div class="blokiinfocontainer">
+    <div class="blokiinfocontainer1">
       <div class='textobok textbook-1'>
-        cfvbnhjmk,lmjnb gg yuhij v u ghijn  gidsjn
+        Telekomunikacja Bezprzewodowa  <br> jest polskim przedsiębiorstwem<br> świadczącym usługi gastronomiczne <br> od ponad 500 lat.
       </div>
       <div class="blokiinfo1">
-        Hejaaa
+        <img class="picblokiinfo" src="{{url_for("static", filename="jasio.jpg")}}" alt="znowu zjebałam (vol.3)">
       </div>
-      
-      
+     </div> 
+
+
+    <div class="blokiinfocontainer2">
       <div class="textobok textbook-2">
-        cfvgbjnkml,vgb gbuhnj gb hnj bujni  yujni  vtgybu hnij
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br> sed do eiusmod tempor incididunt ut labore <br>
+        et dolore magna aliqua. Ut enim ad minim <br> veniam, quis nostrud exercitation ullamco laboris
       </div>
       <div class="blokiinfo2">
-        Hejaaa vol.2
+        <img class="picblokiinfo" src="{{url_for("static", filename="domek.jpg")}}" alt="znowu zjebałam (vol.3)">
       </div>
     </div>
 
+    <div class="podzial"> Zakres oferowanych usług
+    </div>
+
+    <div class="zakrescontainer">
+      <div class="zakresblok1">
+        Drapanko po pleckach gyeiufj fjsdm kjdf m
+      </div>
+      <div class="zakresblok2">
+        bv g f
+      </div>
+
+      <div class="zakresblok3">
+        jtgfvc ds
+      </div>
+
+      <div class="zakresblok4">
+      dfsf dfscx jg
+      </div>
+    </div>
 
 
 <script>
@@ -101,5 +131,69 @@ function carousel() {
 
 </script>
 
-    
+<script>
+    window.sr = ScrollReveal();
+    sr.reveal('.podzial', {
+        reset: false,
+        delay: 200,
+        duration: 1500
+    });
+
+    sr.reveal('.blokpusty', {
+        reset: false,
+        delay: 400,
+        duration: 1500
+    });
+
+    sr.reveal('.blokiinfocontainer1', {
+       distance: '25%',
+       reset: false,
+      delay: 200,
+      duration: 2000,
+      origin: 'left'
+      });
+
+    sr.reveal('.blokiinfocontainer2', {
+       distance: '25%',
+       reset: false,
+      delay: 200,
+      duration: 2000,
+      origin: 'right'
+      });
+
+    sr.reveal('.zakresblok1', {
+       distance: '10%',
+       reset: false,
+      delay: 200,
+      duration: 2000,
+      origin: 'bottom'
+      });
+    sr.reveal('.zakresblok2', {
+       distance: '10%',
+       reset: false,
+      delay: 400,
+      duration: 2000,
+      origin: 'bottom'
+      });
+     sr.reveal('.zakresblok3', {
+       distance: '10%',
+       reset: false,
+      delay: 600,
+      duration: 2000,
+      origin: 'bottom'
+      });     
+    sr.reveal('.zakresblok4', {
+       distance: '10%',
+       reset: false,
+      delay: 800,
+      duration: 2000,
+      origin: 'bottom'
+      });
+
+
+
+</script>
+
+
+
 {% endblock content %}
