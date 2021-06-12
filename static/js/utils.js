@@ -12,7 +12,7 @@ export function showSlides(n) {
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex - 1].style.display = "block";
+    slides[slideIndex - 1].style.display = "inline-block";
 
     dots[slideIndex - 1].className += " active";
 }
@@ -35,7 +35,7 @@ export function carousel() {
     }
     slideIndex++;
     if (slideIndex > x.length) { slideIndex = 1 }
-    x[slideIndex - 1].style.display = "block";
+    x[slideIndex - 1].style.display = "inline-block";
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }

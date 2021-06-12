@@ -74,18 +74,23 @@ nav button:hover{
   margin-left: 3em;
 }
 
-.slideshow-container, .myslides, .slides, .text {
+.slideshow-container, .mySlides, .slides, .text {
   width: 40vw;
 }
 
 .slideshow-container {
-    position: relative;
-    height: auto;
-  }
+  position: relative;
+  height: auto;
+}
 
-.myslides, .slides {
-        display: block;
-        height: auto;
+.slides {
+  display: block;
+  height: auto;
+}
+
+.mySlides {
+  display: inline-block;
+  height: auto;
 }
 
 /*.text {
@@ -264,7 +269,6 @@ section.image {
 
 .container {
   position: relative;
-  width: 40vw;
   height: auto;
   margin: auto;
   
@@ -272,8 +276,9 @@ section.image {
 
 .row {
   content: "";
-  display: table;
+  display: inline-block;
   clear: both;
+  width: 40vw;
 }
 
 /* Six columns side by side */
