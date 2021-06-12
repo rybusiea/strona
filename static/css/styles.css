@@ -17,15 +17,16 @@ body * {
 
 h1 {
     /*background: radial-gradient(circle, rgb(9, 37, 68) 0%, rgb(9, 64, 104) 34%, rgba(255,255,255,100) 97%, rgba(255,255,255,100) 98%);*/
-    background-color: rgb(9, 64, 104);
+    background-color: rgb(4, 48, 80);
     text-align: center;
     font-size: 30px;
     color: aliceblue;
-    padding-top: 25px;
+    padding: 15px 0 15px 0;
     margin: 0;
     line-height: 60px;
     transition-duration: 0.2s;
     text-shadow: 2px 2px #717171;
+    text-transform: uppercase;
 }
 
 h1:hover{
@@ -35,7 +36,7 @@ h1:hover{
 }
 
 nav {
-    background: rgb(9, 37, 68);
+    background: rgba(9, 37, 68, 1);
     padding: 8px 32px 8px 32px;
     display: flex;
 }
@@ -70,27 +71,56 @@ nav button:hover{
 }
 
 .pasek span{
-    margin-left: 3em;
+  margin-left: 3em;
+}
+
+.slideshow-container, .myslides, .slides, .text {
+  width: 40vw;
 }
 
 .slideshow-container {
     position: relative;
-    margin: auto;
-    width: max-content;
-    height: 500px;
+    height: auto;
   }
 
-.text {
+.myslides, .slides {
+        display: block;
+        height: auto;
+}
+
+/*.text {
   color: #f2f2f2;
   background: rgba(0,0,0,0.5);
   font-size: 40px;
-  padding: 8px 12px;
   position: absolute;
   font: bold;
   bottom: 8px;
-  width: calc(100% - 23px);
   text-align: center;
+}*/
+
+.textprawy {
+  color: rgb(9, 37, 68);
+  font-size: 38px;
+  display: inline-block;
+  position: relative;
 }
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+    position: relative;
+    bottom: 0;
+  }
+  
+.active, .dot:hover {
+    background-color: #717171;
+  }
 
 .prev, .next {
     cursor: pointer;
@@ -105,6 +135,12 @@ nav button:hover{
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
     user-select: none;
+  }
+
+  .zakrescontainer2 {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
   }
 
 .next {
@@ -133,27 +169,6 @@ nav button:hover{
     to {opacity: 1}
   }
 
-.myslides, .slides {
-        display: block;
-        width: calc(100vw - 20px);
-        height: 500px;
-}
-
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-  }
-
-.active, .dot:hover {
-    background-color: #717171;
-  }
 
 .blokiinfocontainer2, .blokiinfocontainer1 {
   height: 20vh;
@@ -222,7 +237,7 @@ nav button:hover{
   width: 20vw;
   min-width: 250px;
   height: 20vh;
-  background: linear-gradient(0deg, rgba(9,37,68,1) 0%, rgba(75,96,118,1) 15%, rgba(255,255,255,1) 15%, rgba(255,255,255,0.01) 100%);
+  background: linear-gradient(0deg, rgba(9,37,68,1) 0%, rgba(75,96,118,1) 15%, rgba(255,255,255,0.6) 15%, rgba(255,255,255,0.01) 100%);
   color: rgba(9,37,68,1);
   font-size: 28px;
   margin: 1vw;
@@ -238,8 +253,59 @@ section.image {
 
 .przerwa {
   background-color: #ffffff00;
-  padding-top: 20vh;
+  padding-top: 15vh;
+  padding-bottom: 10vh;
 }
+
+
+
+
+
+
+.container {
+  position: relative;
+  width: 40vw;
+  height: auto;
+  margin: auto;
+  
+}
+
+.row {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  display: block;
+  width: 50%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active2,
+.demo:hover {
+  opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 1366px) {
     nav button {
