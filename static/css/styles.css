@@ -16,7 +16,8 @@ body * {
 }
 
 h1 {
-    background: radial-gradient(circle, rgb(9, 37, 68) 0%, rgb(9, 64, 104) 34%, rgba(255,255,255,100) 97%, rgba(255,255,255,100) 98%);
+    /*background: radial-gradient(circle, rgb(9, 37, 68) 0%, rgb(9, 64, 104) 34%, rgba(255,255,255,100) 97%, rgba(255,255,255,100) 98%);*/
+    background-color: rgb(9, 64, 104);
     text-align: center;
     font-size: 30px;
     color: aliceblue;
@@ -154,138 +155,91 @@ nav button:hover{
     background-color: #717171;
   }
 
-.blokiinfo1, .blokiinfo2, .picblokiinfo {
-  position: absolute;
-  animation-duration: 1.5s;
-  width: 350px;
-  height: 300px;
-  background: rgba(9,37,68,1);
-  color: rgba(255,255,255,100);
-  font-family: 'Titillium Web', sans-serif;
-  font-size: 24px;
-  text-align: 50vw;
-  padding: 0px;
-}
-
-.picblokiinfo{
-  position: relative;
-}
-
-.blokiinfo1 {
-  right: 10vw;
-  animation-name: slide-in-left;
-  padding: 8px;
-}
-
-.blokiinfo2 {
-  left: 10vw;
-  top: 0px;
-  animation-name: slide-in-right;
-  padding: 8px;
-}
-
 .blokiinfocontainer2, .blokiinfocontainer1 {
-  width: calc(100vw - 20px);
-  height: 316px;
+  height: 20vh;
 	position: relative;
   font-family: 'Titillium Web', sans-serif;
-  text-align: center;
-  animation-duration: 3s;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .blokiinfocontainer1{
-  margin-top: 50px;
- /* animation-name: slide-in-left; */
-  background: linear-gradient(90deg, rgba(255,255,255,0.01) 20%, rgba(9,37,68,1) 35%, rgba(9,37,68,1) 90%, rgba(255,255,255,1) 90%);
+  background: rgba(9, 37, 68, 0.9);
+  text-align: left;
 }
 
 .blokiinfocontainer2{
-  /*animation-name: slide-in-right;*/
-  background: linear-gradient(90deg, rgba(255,255,255,1) 10%, rgba(9,37,68,1) 10%, rgba(9,37,68,1) 65%, rgba(255,255,255,0) 80%);
+  background: rgba(9,37,68,0.9);
   margin-top: 30px;
+  text-align: right;
 }
-
-/*@keyframes slide-in-left {
-  from {transform: translateX(-200%); opacity: 0;}
-  to {transform: translateX(0%); opacity: 1;}
-}
-
-@keyframes slide-in-right {
-  from {transform: translateX(200%); opacity: 0;}
-  to {transform: translateX(0%); opacity: 1;}
-}*/
 
 .textobok{
   color: aliceblue;
-  animation-name: appear;
-  animation-delay: 3s;
-  animation-duration: 1.5s;
-  animation-fill-mode: forwards;
-  font-size: 30px;
+  font-size: 34px;
   position: absolute;
 }
 
 .textbook-1 {
-  right: calc(50vw - 15vw);
+  left: 20vw;
 }
 
 .textbook-2 {
-  left: calc(50vw - 20vw);
+  right: 20vw;
 }
 
-/*@keyframes appear {
-  0%   {color:rgba(1, 74, 122, 0);}
-  100% {color:aliceblue;}
-}*/
+.podzialcontainer {
+  background: radial-gradient(circle, rgba(250,250,250,0.8) 0%, rgba(255,255,255,0) 100%);
+  padding: 30px 0 30px 0;
+}
 
 .podzial {
   height: 58px;
   width: calc(50vw - 30px);
-  background:rgba(9,37,68,1);
+  background:rgba(9,37,68,0.9);
   color: aliceblue;
   font-size: 38px;
-  margin-top: 70px;
   padding: 5px 100px 5px 5px;
   text-align: right;
   font-weight: bold;
 }
 
 .blokpusty {
-  /*background: radial-gradient(circle, rgb(9, 37, 68) 0%, rgb(9, 64, 104) 34%, rgba(255,255,255,100) 97%, rgba(255,255,255,100) 98%);*/
   padding-left: 30vw;
   color: rgb(9, 37, 68);
   font-size: 38px;
 }
 
 .zakrescontainer {
-  position: relative;
-  margin: auto;
-  width: max-content;
-  text-align: end;
-  display: block;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
   padding-top: 10vh;
-  white-space: nowrap;
-
 }
 
 .zakresblok1, .zakresblok2, .zakresblok3, .zakresblok4 {
   width: 20vw;
+  min-width: 250px;
   height: 20vh;
   background: linear-gradient(0deg, rgba(9,37,68,1) 0%, rgba(75,96,118,1) 15%, rgba(255,255,255,1) 15%, rgba(255,255,255,0.01) 100%);
   color: rgba(9,37,68,1);
   font-size: 28px;
-  display: inline-block;
-  white-space: normal;
   margin: 1vw;
 }
 
+section.image {
+  height: 100%;
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
-
-
-
+.przerwa {
+  background-color: #ffffff00;
+  padding-top: 20vh;
+}
 
 @media only screen and (max-width: 1366px) {
     nav button {

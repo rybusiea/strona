@@ -1,7 +1,29 @@
 {% extends "layout.html" %}
+{% block head %}<script type="module" src="{{ url_for('static', filename='js/projekty.js') }}"></script>{% endblock head %}
 {% block content %}
 
+<div class="slideshow-container">
 
+      <div class="myslides fade">
+        <img class="slides" src="{{url_for("static", filename="mountain1.jpg")}}" alt="zjebałam vol.1">
+        <div class="text">Góóóryyy</div>
+      </div>
+
+      <div class="myslides fade">
+        <img class="slides" src="{{url_for("static", filename="snowtops1.jpg")}}" alt="znowu zjebałam (vol.2)">
+        <div class="text">Wincyj góóór</div>
+      </div>
+      
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
+
+      <br>
+      <div style="text-align:center">
+          <span class="dot" data-slide="1"></span> 
+          <span class="dot" data-slide="2"></span> 
+      </div>
+      <br>
+    </div>
 
 
 
