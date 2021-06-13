@@ -4,100 +4,110 @@
 
 
 <section class="image" data-parallax="scroll" data-image-src="static/sky4.jpg">
-  
+
+    <div class='przerwa'>
+      <div class="blokiinfocontainer1">
+        <div class='textobok textbook-1'>
+          Telekomunikacja Bezprzewodowa  jest polskim przedsiębiorstwem<br> świadczącym usługi gastronomiczne od ponad 500 lat.
+        </div>
+      </div> 
+      <div class="blokiinfocontainer2">
+        <div class="textobok textbook-2">
+            Bada bim<br>bada... boom.
+        </div>
+      </div>
+    </div>
+
+
+    <div class="przerwa">
+      <div class="podzialcontainer">
+        <div class="podzial" style="margin-bottom: 0px"> Bla bla bla
+        </div>
+        
+        <div class="zakrescontainer2">
+            <div class="textprawy"  style="text-align: right">Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit, sed do eiusmod tempor incididunt ut labore <br> et dolore 
+            magna aliqua. Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris <br>nisi ut aliquip ex ea commodo consequat.
+            </div>
+            <div class="slideshow-container">
+
+                <div class="myslides fade">
+                  <img class="slides" src="{{url_for("static", filename="mountain.jpg")}}" alt="zjebałam vol.1">
+                </div>
+
+                <div class="myslides fade">
+                  <img class="slides" src="{{url_for("static", filename="snowtops.jpg")}}" alt="znowu zjebałam (vol.2)">
+                </div>            
+
+                <div style="text-align:center">
+                    <span class="dot" data-slide="1"></span> 
+                    <span class="dot" data-slide="2"></span> 
+                </div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>            
+        </div>
+
+      </div>
+    </div>
+
+
+
+
   <div class="przerwa">
-    <div class="podzialcontainer">
-
-    <div class="zakrescontainer2">
-      <div class="slideshow-container">
-            <div class="myslides fade">
-              <img class="slides" src="{{url_for("static", filename="mountain.jpg")}}" alt="zjebałam vol.1">
+      <div class="podzialcontainer">
+        <div class="podzial" style="margin-bottom: 0px; float: right; text-align: left; padding: 5px 5px 5px 100px"> Bla bla bla
+        </div>
+        
+        <div class="zakrescontainer2">
+            <div class="textprawy"  style="text-align: right">Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit, sed do eiusmod tempor incididunt ut labore <br> et dolore 
+            magna aliqua. Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris <br>nisi ut aliquip ex ea commodo consequat.
             </div>
+            <div class="slideshow-container">
 
-            <div class="myslides fade">
-              <img class="slides" src="{{url_for("static", filename="snowtops.jpg")}}" alt="znowu zjebałam (vol.2)">
-            </div>
-            
-            <a class="prev">&#10094;</a>
-            <a class="next">&#10095;</a>
+                <div class="myslides2 fade">
+                  <img class="slides2" src="{{url_for("static", filename="mountain.jpg")}}" alt="zjebałam vol.1">
+                </div>
 
-            <div style="text-align:center">
-                <span class="dot" data-slide="1"></span> 
-                <span class="dot" data-slide="2"></span> 
-            </div>
-            <br>
+                <div class="myslides2 fade">
+                  <img class="slides2" src="{{url_for("static", filename="snowtops.jpg")}}" alt="znowu zjebałam (vol.2)">
+                </div>            
+
+                <div style="text-align:center">
+                    <span class="dot" data-slide="1"></span> 
+                    <span class="dot" data-slide="2"></span> 
+                </div>
+                <a class="prev">&#10094;</a>
+                <a class="next">&#10095;</a>            
+        </div>
+
       </div>
+    </div>
 
-      <div class="textprawy">gyfujd m mffkdlc,c. cfhnjmkc ,jikl, v <br> duijcmoklx  vhdjnicmk bhcjnkmkv mmi fdsuhijn mchjcm
-      </div>
+
+
+
+
+
+
+
+
+
+
+
+   <div class="przerwa">
+      <div class="podzialcontainer">
+        <div class="podzial"> Bla bla bla
+        </div>
+      <div class="zakrescontainer, blokpusty">
+        hfd grfdv  ytgfvc afdv
       </div>
     </div>
   </div>
 
-  <div class='podzialcontainer'>
-  few
-  </div>
 
 
-<div class="podzialcontainer">
-  <div class="container">
-
-    <div class="mySlides">
-      <img src="static/mountain.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <img src="static/snowtops.jpg" style="width:100%">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-
-    <div class="row">
-      <div class="column">
-        <img class="demo cursor" src="static/mountain.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Woods">
-      </div>
-      <div class="column">
-        <img class="demo cursor" src="static/snowtops.jpg" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
-      </div>
-    </div>
-  </div>
-</div>
 
 
 </section>
-
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  var captionText = document.getElementById("caption");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "inline-block";
-  dots[slideIndex-1].className += " active";
-  captionText.innerHTML = dots[slideIndex-1].alt;
-}
-
-</script>
 
 
 {% endblock content %}

@@ -1,6 +1,7 @@
-import { showSlides, plusSlides, currentSlide, carousel } from "./utils.js";
+import { setupScrollReveal, showSlides, plusSlides, currentSlide, carousel } from "./utils.js";
 
 $(document).ready(() => {
+    setupScrollReveal();
     showSlides(1);
     carousel();
     setupEventListeners();

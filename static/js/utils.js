@@ -76,7 +76,7 @@ export function setupScrollReveal() {
         distance: '25%',
         reset: false,
         delay: 200,
-        duration: 2000,
+        duration: 3000,
         origin: 'right'
     });
 
