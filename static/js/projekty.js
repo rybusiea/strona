@@ -1,17 +1,6 @@
-import { setupScrollReveal, showSlides, plusSlides, currentSlide, carousel } from "./utils.js";
+import { manageSlides } from "./utils.js";
 
 $(document).ready(() => {
-    setupScrollReveal();
-    showSlides(1);
-    carousel();
-    setupEventListeners();
+    manageSlides('#slideshow-container-1');
+    manageSlides('#slideshow-container-2');
 });
-
-function setupEventListeners() {
-    document.querySelector('.prev').onclick = () => plusSlides(-1);
-    document.querySelector('.next').onclick = () => plusSlides(1);
-    const dots = document.getElementsByClassName('dot');
-    for (const dot of dots) {
-        dot.onclick = () => currentSlide(dot.getAttribute('data-slide'));
-    }
-}

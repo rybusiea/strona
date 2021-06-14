@@ -1,3 +1,9 @@
+import SlideManager from "./SlideManager.js";
+
+export function manageSlides(containerSelector) {
+    new SlideManager(containerSelector);
+}
+
 var slideIndex = 1;
 export function showSlides(n) {
     var i;

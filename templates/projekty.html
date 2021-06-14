@@ -1,112 +1,95 @@
 {% extends "layout.html" %}
-{% block head %}<script type="module" src="{{ url_for('static', filename='js/projekty.js') }}"></script>{% endblock head %}
+{% block head %}
+<script type="module" src="{{ url_for('static', filename='js/projekty.js') }}"></script>{% endblock head %}
 {% block content %}
 
 
 <section class="image" data-parallax="scroll" data-image-src="static/sky4.jpg">
 
-    <div class='przerwa'>
-      <div class="blokiinfocontainer1">
-        <div class='textobok textbook-1'>
-          Telekomunikacja Bezprzewodowa  jest polskim przedsiębiorstwem<br> świadczącym usługi gastronomiczne od ponad 500 lat.
-        </div>
-      </div> 
-      <div class="blokiinfocontainer2">
-        <div class="textobok textbook-2">
-            Bada bim<br>bada... boom.
-        </div>
+  <div class='przerwa'>
+    <div class="blokiinfocontainer1">
+      <div class='textobok textbook-1'>
+        Telekomunikacja Bezprzewodowa jest polskim przedsiębiorstwem<br> świadczącym usługi gastronomiczne od ponad 500
+        lat.
       </div>
     </div>
-
-
-    <div class="przerwa">
-      <div class="podzialcontainer">
-        <div class="podzial" style="margin-bottom: 0px"> Bla bla bla
-        </div>
-        
-        <div class="zakrescontainer2">
-            <div class="textprawy"  style="text-align: right">Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit, sed do eiusmod tempor incididunt ut labore <br> et dolore 
-            magna aliqua. Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris <br>nisi ut aliquip ex ea commodo consequat.
-            </div>
-            <div class="slideshow-container">
-
-                <div class="myslides fade">
-                  <img class="slides" src="{{url_for("static", filename="mountain.jpg")}}" alt="zjebałam vol.1">
-                </div>
-
-                <div class="myslides fade">
-                  <img class="slides" src="{{url_for("static", filename="snowtops.jpg")}}" alt="znowu zjebałam (vol.2)">
-                </div>            
-
-                <div style="text-align:center">
-                    <span class="dot" data-slide="1"></span> 
-                    <span class="dot" data-slide="2"></span> 
-                </div>
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>            
-        </div>
-
-      </div>
-    </div>
-
-
-
-
-  <div class="przerwa">
-      <div class="podzialcontainer">
-        <div class="podzial" style="margin-bottom: 0px; float: right; text-align: left; padding: 5px 5px 5px 100px"> Bla bla bla
-        </div>
-        
-        <div class="zakrescontainer2">
-            <div class="textprawy"  style="text-align: right">Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit, sed do eiusmod tempor incididunt ut labore <br> et dolore 
-            magna aliqua. Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris <br>nisi ut aliquip ex ea commodo consequat.
-            </div>
-            <div class="slideshow-container">
-
-                <div class="myslides2 fade">
-                  <img class="slides2" src="{{url_for("static", filename="mountain.jpg")}}" alt="zjebałam vol.1">
-                </div>
-
-                <div class="myslides2 fade">
-                  <img class="slides2" src="{{url_for("static", filename="snowtops.jpg")}}" alt="znowu zjebałam (vol.2)">
-                </div>            
-
-                <div style="text-align:center">
-                    <span class="dot" data-slide="1"></span> 
-                    <span class="dot" data-slide="2"></span> 
-                </div>
-                <a class="prev">&#10094;</a>
-                <a class="next">&#10095;</a>            
-        </div>
-
-      </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-   <div class="przerwa">
-      <div class="podzialcontainer">
-        <div class="podzial"> Bla bla bla
-        </div>
-      <div class="zakrescontainer, blokpusty">
-        hfd grfdv  ytgfvc afdv
+    <div class="blokiinfocontainer2">
+      <div class="textobok textbook-2">
+        Bada bim<br>bada... boom.
       </div>
     </div>
   </div>
 
 
+  <div class="przerwa">
+    <div class="podzialcontainer">
+      <div class="podzial" style="margin-bottom: 0px"> Bla bla bla
+      </div>
 
+      <div class="zakrescontainer2">
+        <div class="textprawy" style="text-align: right">Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit,
+          sed do eiusmod tempor incididunt ut labore <br> et dolore
+          magna aliqua. Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris <br>nisi ut aliquip ex ea
+          commodo consequat.
+        </div>
+        <div id="slideshow-container-1" class="slideshow-container">
 
+          <div class="myslides fade">
+            <img class="slides" src="{{url_for('static', filename='mountain.jpg' )}}" alt="zjebałam vol.1">
+          </div>
 
+          <div class="myslides fade">
+            <img class="slides" src="{{url_for('static', filename='snowtops.jpg' )}}" alt="znowu zjebałam (vol.2)">
+          </div>
+
+          <div style="text-align:center">
+            <span class="dot" data-slide="0"></span>
+            <span class="dot" data-slide="1"></span>
+          </div>
+          <a class="prev">&#10094;</a>
+          <a class="next">&#10095;</a>
+        </div>
+      </div>
+    </div>
+    <div class="przerwa">
+      <div class="podzialcontainer">
+        <div class="podzial" style="margin-bottom: 0px; float: right; text-align: left; padding: 5px 5px 5px 100px"> Bla
+          bla bla
+        </div>
+        <div class="zakrescontainer2">
+          <div class="textprawy" style="text-align: right">Lorem ipsum dolor sit amet, consectetur adipiscing <br>elit,
+            sed do eiusmod tempor incididunt ut labore <br> et dolore
+            magna aliqua. Ut enim ad minim veniam, <br>quis nostrud exercitation ullamco laboris <br>nisi ut aliquip ex
+            ea commodo consequat.
+          </div>
+          <div id="slideshow-container-2" class="slideshow-container">
+
+            <div class="myslides fade">
+              <img class="slides" src="{{url_for('static', filename='mountain.jpg' )}}" alt="zjebałam vol.1">
+            </div>
+
+            <div class="myslides fade">
+              <img class="slides" src="{{url_for('static', filename='snowtops.jpg' )}}" alt="znowu zjebałam (vol.2)">
+            </div>
+
+            <div style="text-align:center">
+              <span class="dot" data-slide="0"></span>
+              <span class="dot" data-slide="1"></span>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <div class="przerwa">
+        <div class="podzialcontainer">
+          <div class="podzial"> Bla bla bla
+          </div>
+          <div class="zakrescontainer, blokpusty">
+            hfd grfdv ytgfvc afdv
+          </div>
+        </div>
+      </div>
 </section>
 
 
