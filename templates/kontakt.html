@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block head %}<script type="module" src="{{ url_for('static', filename='js/kontakt.js') }}"></script>{% endblock head %}
+{% block content %}
+
+<section class="image" data-parallax="scroll" data-image-src="static/sky4.jpg">
+
+<div class="zakrescontainer" style="flex-direction: column; display: center;">
+          <div class="zakresblokkontakt1">
+            TELEFON <br><br>
+            123-456-789
+          </div>
+          <div class="zakresblokkontakt2">
+            E-MAIL <br><br>
+            TATAJASIA@OP.PL
+          </div>
+          <div class="zakresblokkontakt3">
+            ADRES <br><br>
+            UL. ULICOWA 00-111 MIASTO
+          </div>
+        </div>
+
+</section>
+
+{% endblock content %}

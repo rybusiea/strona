@@ -51,17 +51,13 @@ export function carousel() {
 
 export function setupScrollReveal() {
     window.sr = ScrollReveal();
-    sr.reveal('.podzial', {
-        reset: false,
-        delay: 200,
-        duration: 1500
-    });
+
 
     sr.reveal('.podzialcontainer', {
         reset: false,
         delay: 200,
         duration: 1500,
-        origin: "top",
+        origin: "top"
     })
 
     sr.reveal('.blokpusty', {
@@ -86,7 +82,7 @@ export function setupScrollReveal() {
         origin: 'right'
     });
 
-    sr.reveal('.zakresblok1', {
+    sr.reveal('.zakresblok1,', {
         distance: '10%',
         reset: false,
         delay: 300,
@@ -113,5 +109,30 @@ export function setupScrollReveal() {
         delay: 800,
         duration: 2000,
         origin: 'bottom'
+    });
+
+
+    sr.reveal('.zakresblokkontakt1', {
+        distance: '10%',
+        reset: false,
+        delay: 200,
+        duration: 2000,
+        origin: 'left'
+    });
+
+    sr.reveal('.zakresblokkontakt2', {
+        distance: '10%',
+        reset: false,
+        delay: 400,
+        duration: 2000,
+        origin: 'left'
+    });
+
+    sr.reveal('.zakresblokkontakt3', {
+        distance: '10%',
+        reset: false,
+        delay: 600,
+        duration: 2000,
+        origin: 'left'
     });
 }
